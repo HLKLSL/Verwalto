@@ -1,0 +1,268 @@
+/* =========================
+   Grundlayout
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #2563eb;
+}
+
+.header-right {
+    font-weight: 500;
+    color: #6b7280;
+}
+
+/* =========================
+   Hauptbereich
+========================= */
+
+main {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   Allgemeine Karten
+========================= */
+
+.card {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.05);
+
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Obere Karten
+========================= */
+
+.top-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.2fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Mittlere Reihe
+========================= */
+
+.middle-grid {
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Objekt-Karten
+========================= */
+
+.object-stats {
+    display: flex;
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.stat-box {
+    flex: 1;
+
+    background: #eef2ff;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+.stat-box h3 {
+    color: #2563eb;
+    font-size: 28px;
+}
+
+.stat-box p {
+    margin-top: 5px;
+    color: #6b7280;
+}
+
+/* =========================
+   Schnellzugriff
+========================= */
+
+.bottom-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Aktivitätsbereich
+========================= */
+
+.activity-section {
+    margin-bottom: 40px;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    margin-top: 12px;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   Inputfelder
+========================= */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    margin-top: 8px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* =========================
+   Warnungen
+========================= */
+
+.warning {
+    border-left: 5px solid #f59e0b;
+}
+
+.ai-card {
+    border-left: 5px solid #2563eb;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 1000px) {
+
+    .top-grid,
+    .middle-grid,
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .object-stats {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
