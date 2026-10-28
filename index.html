@@ -1,191 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verwalto</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <meta name="description" content="Verwalto bringt Klarheit in die Immobilienverwaltung. Lokal gedacht. Schritt für Schritt entwickelt." />
+  <title>Verwalto — Verwaltung. Einfach klar.</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Verwalto Startseite"><span class="brand-mark">v</span><span>verwalto</span></a>
+    <nav class="nav" aria-label="Hauptnavigation"><a href="#idee" data-t="navIdea">Die Idee</a><a href="#produkt" data-t="navProduct">Produkt</a><a href="#lokal" data-t="navLocal">Lokal</a><a href="#preise" data-t="navPrices">Preise</a><label class="language-picker"><span class="language-icon">◎</span><select id="language-select" aria-label="Sprache auswählen"><option value="de">DE</option><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="zh">中文</option></select></label><a class="nav-cta" href="#zugang" data-t="navEarly">Frühzugang <span>↗</span></a></nav>
+    <button class="menu-button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal"><div class="eyebrow"><span class="live-dot"></span> <span data-t="heroEyebrow">EINE NEUE ART, DEN ÜBERBLICK ZU BEHALTEN</span></div><h1 data-t="heroTitle">Immobilienverwaltung.<br /><span>Einfach klar.</span></h1><p data-t="heroBody">Deine Objekte, Einheiten und Kontakte. An einem Ort, der sich richtig anfühlt — und auf deinem Rechner zuhause ist.</p><div class="hero-buttons"><a class="button button-dark" href="#idee" data-t="heroExplore">Verwalto entdecken <span>↓</span></a><a href="#produkt" class="quiet-link" data-t="heroCurrent">Was heute schon funktioniert <span>↗</span></a></div><div class="hero-caption"><span class="caption-symbol">⌂</span><span data-t="heroAudience">Für private Eigentümer und kleine Verwaltungen</span><i></i><span data-t="heroLocal">Lokal konzipiert</span></div></div>
+      <div class="hero-stage reveal" data-parallax><div class="stage-glow"></div><div class="stage-orbit orbit-a"></div><div class="stage-orbit orbit-b"></div><div class="float-tag tag-a"><span class="tag-icon">✓</span><span><b>Ein Ort für alles</b><small>Objekte & Kategorien</small></span></div>
+        <div class="app-window"><div class="app-titlebar"><span class="window-logo">v</span><strong>verwalto</strong><span class="window-user">H</span></div><div class="app-content"><div class="app-overline" data-t="appWorkspace">DEIN ARBEITSBEREICH</div><h2 data-t="appGreeting">Guten Tag, Henry.</h2><p data-t="appWelcome">Hier beginnt der Überblick.</p><div class="app-row-title"><span data-t="appProperties">DEINE OBJEKTE</span> <span data-t="appSeeAll">Alle ansehen ↗</span></div><div class="object-row"><div class="object-art house-one"><i></i><i></i><i></i><i></i></div><div><small data-t="appKindHouse">MEHRFAMILIENHAUS</small><b>Haus am Lindenweg</b><span>Berlin · 8 Einheiten</span></div><em>›</em></div><div class="object-row"><div class="object-art house-two"><i></i><i></i><i></i><i></i></div><div><small data-t="appKindFlat">WOHNUNG</small><b>Altbau am Park</b><span>Potsdam · 1 Einheit</span></div><em>›</em></div><div class="app-note"><span>●</span> <span data-t="appNote">Alles in deinem Arbeitsbereich</span></div></div></div>
+        <div class="float-tag tag-b"><span class="tag-icon tag-leaf">✳</span><span><b data-t="tagLocal">Deine Daten bleiben bei dir.</b><small data-t="tagLocalSub">Lokaler Ansatz, von Anfang an.</small></span></div><div class="stage-spark spark-one">✳</div><div class="stage-spark spark-two">✦</div>
+      </div><a class="scroll-hint" href="#netzwerk"><span></span> <span data-t="scrollHint">WEITER ENTDECKEN</span></a>
+    </section>
+    <section class="network-section section-pad" id="netzwerk" aria-labelledby="network-title"><div class="network-heading reveal"><div class="eyebrow" data-t="networkEyebrow">WIE ALLES ZUSAMMENHÄNGT</div><h2 class="display" id="network-title" data-t="networkTitle">Eine gute Verwaltung<br />sieht <em>Verbindungen.</em></h2><p data-t="networkLead">Ein Objekt ist mehr als eine Adresse. Es ist verbunden mit Menschen, Dokumenten, Entscheidungen und dem Gefühl, alles im Griff zu haben.</p></div><div class="network-board reveal"><svg class="network-wires" viewBox="0 0 1000 480" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="wire" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#91aa91" stop-opacity=".55"/><stop offset=".5" stop-color="#668869"/><stop offset="1" stop-color="#91aa91" stop-opacity=".55"/></linearGradient></defs>
+<path class="wire" d="M450 170 C390 138 300 105 230 119"/><path class="wire focus-link deadline-link" d="M500 158 C500 130 500 100 500 80"/><path class="wire" d="M550 170 C615 138 700 105 770 119"/><path class="wire" d="M404 225 C320 225 220 230 135 230"/><path class="wire" d="M596 225 C680 225 780 230 865 230"/><path class="wire" d="M445 280 C390 315 310 350 245 370"/><path class="wire" d="M555 280 C610 315 690 350 750 370"/><path class="wire focus-link clarity-link" d="M500 293 C500 306 500 318 500 328"/><path class="wire focus-link mobile-date-link" d="M430 218 C390 178 345 145 308 130"/><path class="wire focus-link mobile-clarity-link" d="M500 290 C500 330 500 375 500 419"/>
+<circle class="wire-pulse" r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M500 158 C500 130 500 100 500 76"/></circle><circle class="wire-pulse pulse-delay" r="4"><animateMotion dur="4.6s" repeatCount="indefinite" path="M500 292 C500 306 500 320 500 332"/></circle><circle class="wire-pulse pulse-delay-two" r="4"><animateMotion dur="4.8s" repeatCount="indefinite" path="M450 170 C390 138 300 105 230 119"/></circle></svg>
+        <div class="memory-node node-core"><span class="core-symbol">v.</span><b>VERWALTO</b><small data-t="networkCore">ZUSAMMENHÄNGE, DIE KLARHEIT SCHAFFEN</small></div><div class="memory-node node-property"><span class="node-symbol">⌂</span><b data-t="nodeProperties">Objekte</b><small data-t="nodePropertiesSub">dein Bestand</small></div><div class="memory-node node-people"><span class="node-symbol">◎</span><b data-t="nodePeople">Menschen</b><small data-t="nodePeopleSub">wer dazugehört</small></div><div class="memory-node node-documents"><span class="node-symbol">▤</span><b data-t="nodeDocuments">Dokumente</b><small data-t="nodeDocumentsSub">Wissen am Ort</small></div><div class="memory-node node-dates"><span class="node-symbol">◷</span><b data-t="nodeDates">Fristen</b><small data-t="nodeDatesSub">nichts vergessen</small></div><div class="memory-node node-local"><span class="node-symbol">⌘</span><b data-t="nodeLocal">Lokal</b><small data-t="nodeLocalSub">du behältst die Kontrolle</small></div><div class="memory-node node-trust"><span class="node-symbol">✳</span><b data-t="nodeTrust">Vertrauen</b><small data-t="nodeTrustSub">sicher entscheiden</small></div><div class="memory-node node-overview"><span class="node-symbol">◌</span><b data-t="nodeOverview">Überblick</b><small data-t="nodeOverviewSub">alles im Zusammenhang</small></div><div class="memory-node node-clarity"><span class="node-symbol">✦</span><b data-t="nodeClarity">Klarheit</b><small data-t="nodeClaritySub">Raum für das Wesentliche</small></div>
+        
+      </div><div class="motto-console reveal"><span data-t="mottoLabel">VERWALTO GLAUBT AN</span><p id="motto-text">Mit Klarheit verwalten.</p><div class="motto-dots"><i class="active"></i><i></i><i></i></div></div><div class="network-caption reveal"><span class="live-dot"></span><span data-t="networkCaption">Ein Bild der Verwalto-Vision — nicht der bereits verfügbaren Funktionen.</span></div></section>
+    <section class="intro section-pad" id="idee"><div class="eyebrow reveal" data-t="ideaEyebrow">DIE IDEE</div><h2 class="display reveal" data-t="ideaTitle">Mehr Überblick<br />für das, <em>was dir gehört.</em></h2><div class="intro-bottom reveal"><p data-t="ideaBody">Verwaltung sollte sich nicht wie Detektivarbeit anfühlen. Verwalto sammelt die wichtigsten Informationen rund um deine Immobilien an einem übersichtlichen Platz.</p><span class="intro-index">01 <i>—</i> 05</span></div><div class="idea-ribbon"><span data-t="ribbonObjects">OBJEKTE</span><b>✳</b><span data-t="ribbonUnits">EINHEITEN</span><b>✳</b><span data-t="ribbonPeople">MENSCHEN</span><b>✳</b><span data-t="ribbonOverview">DEIN ÜBERBLICK</span></div></section>
+    <section class="product section-pad" id="produkt"><div class="section-heading reveal"><div><div class="eyebrow" data-t="productEyebrow">DAS FUNDAMENT</div><h2 class="display" data-t="productTitle">Ein guter Anfang.<br /><em>Mit Plan gebaut.</em></h2></div><p data-t="productLead">Verwalto wächst Schritt für Schritt. Hier siehst du genau, was heute schon angelegt ist und was als Nächstes kommt.</p></div>
+      <div class="product-grid"><article class="product-card card-object reveal"><div class="card-meta"><span class="card-icon">⌂</span><span class="status"><i></i><span data-t="statusReady">BEREITS ANGELEGT</span></span></div><div class="card-content"><h3 data-t="productObjectsTitle">Dein Bestand.<br />In guter Ordnung.</h3><p data-t="productObjectsBody">Lege Objekte, Kategorien und Einheiten an und finde die Informationen wieder, wenn du sie brauchst.</p><div class="tags"><span data-t="tagObjects">Objekte & Kategorien</span><span data-t="tagUnits">Einheiten & Flächen</span></div></div><div class="card-visual visual-building"><div class="building"><i></i><i></i><i></i><i></i><i></i><i></i><span></span></div><div class="building-shadow"></div></div></article>
+        <article class="product-card card-people reveal"><div class="card-meta"><span class="card-icon violet">◎</span><span class="status"><i></i><span data-t="statusReady">BEREITS ANGELEGT</span></span></div><div class="card-content"><h3 data-t="productPeopleTitle">Die richtigen Menschen.<br />Am richtigen Ort.</h3><p data-t="productPeopleBody">Verknüpfe Parteien mit deinen Objekten. Richte Arbeitsbereiche mit passenden Rollen ein.</p><div class="tags"><span data-t="tagContacts">Kontakte & Zuordnung</span><span data-t="tagRoles">Mitglieder & Rollen</span></div></div><div class="card-visual people-stack"><div class="person p-one">M</div><div class="person p-two">J</div><div class="person p-three">L</div><div class="stack-line"></div></div></article>
+        <article class="product-card card-next reveal"><div class="card-meta"><span class="card-icon yellow">✳</span><span class="status status-planned"><i></i><span data-t="statusBuilding">IN ENTWICKLUNG</span></span></div><div class="card-content"><h3 data-t="productNextTitle">Die nächsten Schritte.<br />Ganz durchdacht.</h3><p data-t="productNextBody">Fristen, Kalender, Dokumente und Finanzen gehören zur weiteren Produktvision.</p><div class="tags"><span data-t="tagDeadlines">Fristen & Kalender</span><span data-t="tagDocs">Dokumente & Aufträge</span><span data-t="tagFinance">Finanzen</span></div></div><div class="card-visual next-orb"><span>✳</span><i></i></div></article></div>
+      <p class="product-footnote" data-t="productFootnote">Die angezeigte Oberfläche ist eine Gestaltungsvorschau. Der aktuelle Entwicklungsstand umfasst Anmeldung, Arbeitsbereiche, Rollen, Kategorien, Objekte, Einheiten und Parteien.</p>
+    </section>
+    <section class="local-section section-pad" id="lokal"><div class="local-copy reveal"><div class="eyebrow eyebrow-light" data-t="localEyebrow">LOKAL GEDACHT</div><h2 class="display" data-t="localTitle">Deine Daten.<br /><em>Dein Zuhause.</em></h2><p data-t="localBody">Verwalto ist als lokale Software konzipiert. Die Anwendung läuft auf deinem Rechner und nutzt eine Datenbank, die du selbst betreibst.</p><div class="local-facts"><div><span>01</span><p><b data-t="localFact1">Du behältst die Kontrolle.</b><small data-t="localFact1Sub">Kein automatischer Upload in eine Verwalto-Cloud.</small></p></div><div><span>02</span><p><b data-t="localFact2">Ein eigener Arbeitsbereich.</b><small data-t="localFact2Sub">Mit persönlichem Zugang und klaren Rollen.</small></p></div><div><span>03</span><p><b data-t="localFact3">Bewusst weiterentwickelt.</b><small data-t="localFact3Sub">Neue Bereiche kommen nachvollziehbar hinzu.</small></p></div></div><small class="local-note" data-t="localNote">Lokaler Betrieb ersetzt keine Backups oder Gerätesicherheit. Verwalto befindet sich im Aufbau.</small></div>
+      <div class="local-art reveal"><div class="local-ring ring-one"></div><div class="local-ring ring-two"></div><div class="device-card"><div class="device-header"><span>● ● ●</span><small>verwalto · lokal</small></div><div class="device-center"><span class="device-house">⌂</span><div class="device-bars"><i></i><i></i><i></i></div><small>DEIN RECHNER</small></div><div class="device-status"><b>✓</b> Kein Cloud-Konto nötig</div></div><span class="art-star">✳</span><span class="geo">52°31′12″ N<br />13°24′18″ E</span></div></section>
+    <section class="pricing section-pad" id="preise"><div class="section-heading reveal"><div><div class="eyebrow" data-t="priceEyebrow">GEPLANTE PREISE</div><h2 class="display" data-t="priceTitle">Einfach und<br /><em>nachvollziehbar.</em></h2></div><p data-t="priceLead">Das sind die geplanten Monatspreise zum Produktstart. Leistungsumfang und Zahlungsabwicklung werden vor dem Start transparent ergänzt.</p></div><div class="price-grid"><article class="price-card reveal"><div class="price-top"><span data-t="pricePrivate">PRIVAT</span><span class="price-mark">01</span></div><p data-t="pricePrivateBody">Für private Eigentümer und den eigenen Bestand.</p><div class="price"><b data-t="pricePrivateAmount">14,99 €</b><span data-t="perMonth">/ Monat</span></div><div class="price-rule"></div><small data-t="priceFoot">Geplanter Preis zum Start</small></article><article class="price-card price-team reveal"><div class="price-top"><span data-t="priceTeam">TEAM</span><span class="price-mark">02</span></div><p data-t="priceTeamBody">Für gemeinsames Verwalten im Team.</p><div class="price"><b data-t="priceTeamAmount">29,99 €</b><span data-t="perMonth">/ Monat</span></div><div class="price-rule"></div><small data-t="priceFoot">Geplanter Preis zum Start</small></article></div><div class="price-status reveal"><span class="live-dot"></span><span data-t="priceStatus">Noch kein Abo und keine Zahlungsdaten nötig. Der frühe Zugang bleibt unverbindlich.</span></div></section>
+    <section class="cta-section section-pad" id="zugang"><div class="cta-glow"></div><div class="cta-content reveal"><div class="eyebrow eyebrow-light" data-t="ctaEyebrow">FRÜHER ZUGANG</div><h2 class="display" data-t="ctaTitle">Sei dabei,<br /><em>wenn es losgeht.</em></h2><p data-t="ctaBody">Verwalto ist noch im Aufbau. Hinterlasse dein Interesse und erfahre, sobald Testzugang und Installation bereitstehen.</p><form class="signup-form"><label for="email" data-t="formLabel">Deine E-Mail-Adresse</label><div class="email-field"><input id="email" type="email" placeholder="du@beispiel.de" data-t-placeholder="formPlaceholder" required /><button type="submit" aria-label="Interesse vormerken" data-t-aria="formSubmit">↗</button></div><small data-t="formNote">Unverbindlich. Das Formular speichert und versendet derzeit keine E-Mail-Adresse.</small><div class="form-message" aria-live="polite"></div></form></div><div class="cta-orbit">v.</div></section>
+    <section class="download section-pad"><div class="download-card reveal"><div class="download-icon">↓</div><div><div class="eyebrow" data-t="downloadEyebrow">INSTALLATION FOLGT</div><h2 data-t="downloadTitle">Verwalto. Auf deinem Rechner.</h2><p data-t="downloadBody">Ein Installationspaket ist noch nicht veröffentlicht. Die aktuelle Entwicklungsfassung lässt sich lokal starten.</p></div><a class="button button-outline" href="INSTALLATION.md" data-t="downloadButton">Installationsanleitung <span>↗</span></a></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">v</span><span>verwalto</span></a><span data-t="footerMotto">Mit Klarheit verwalten.</span><div><a href="#idee">Die Idee</a><a href="#zugang">Frühzugang</a><a href="mailto:hallo@verwalto.de">E-Mail</a><a href="../version-1/index.html">Version 1</a></div><small>© <span id="year"></span> Verwalto · Eine Software im Aufbau</small></footer>
+  <script src="translations.js"></script><script src="script.js"></script>
+</body></html>
 
-<div class="layout">
 
-    <aside class="sidebar">
 
-        <div class="logo">
 
-            <h1>Verwalto</h1>
 
-            <span>Henry Krüger</span>
 
-        </div>
-
-        <nav>
-
-            #
-                <span>⌂</span>
-                Home
-            </a>
-
-            #
-                <span>□</span>
-                Objekte
-            </a>
-
-            #
-                <span>◉</span>
-                Kontakte
-            </a>
-
-            #
-                <span>▣</span>
-                Dokumente
-            </a>
-
-            #
-                <span>◷</span>
-                Fristen
-            </a>
-
-            #
-                <span>€</span>
-                Finanzen
-            </a>
-
-        </nav>
-
-        <div class="assistant-box">
-
-            <h3>KI-Assistent</h3>
-
-            <input
-                type="text"
-                placeholder="Frage stellen..."
-            >
-
-            <button>Senden</button>
-
-        </div>
-
-    </aside>
-
-    <main>
-
-        <header>
-
-            <h2>Dashboard</h2>
-
-            settings.html
-                Einstellungen
-            </a>
-
-        </header>
-
-        <section class="top-grid">
-
-            <div class="card">
-
-                <h3>Was steht an?</h3>
-
-                <ul>
-                    <li>5 offene Aufgaben</li>
-                    <li>1 Eigentümerversammlung</li>
-                    <li>2 Dokumente prüfen</li>
-                </ul>
-
-            </div>
-
-            <div class="card warning">
-
-                <h3>Was beachten?</h3>
-
-                <ul>
-                    <li>Versicherung endet in 14 Tagen</li>
-                    <li>Wartung nächste Woche</li>
-                </ul>
-
-            </div>
-
-        </section>
-
-        <section class="content-grid">
-
-            #
-
-                <h3>Objekte</h3>
-
-                <div class="object-overview">
-
-                    <div>
-                        <strong>24</strong>
-                        <span>Objekte</span>
-                    </div>
-
-                    <div>
-                        <strong>3</strong>
-                        <span>Vorgänge</span>
-                    </div>
-
-                    <div>
-                        <strong>2</strong>
-                        <span>Wartungen</span>
-                    </div>
-
-                </div>
-
-                <h4>Zuletzt verwendet</h4>
-
-                <div class="recent-objects">
-
-                    <button>
-                        Bahnhofstraße 12
-                    </button>
-
-                    <button>
-                        Louisenstraße 91
-                    </button>
-
-                    <button>
-                        Hugenottenstraße 44
-                    </button>
-
-                </div>
-
-            </a>
-
-            <div class="card network-card">
-
-                <h3>Network</h3>
-
-                <input
-                    type="text"
-                    placeholder="Partner suchen..."
-                >
-
-                <button class="category-btn">
-                    Kategorien öffnen
-                </button>
-
-                <div class="categories">
-
-                    <div>Elektrik</div>
-                    <div>Sanitär</div>
-                    <div>Dach</div>
-                    <div>Heizung</div>
-                    <div>Hausmeister</div>
-                    <div>Aufzug</div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-</div>
-
-</body>
-</html>
